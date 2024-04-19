@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+html {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+.Container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(20, 21, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card {
+  z-index: 2;
+  width: 320px;
+  height: 350px;
+  background-image: linear-gradient(rgb(35, 42, 52), rgb(23, 30, 40));
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Card2 {
+  position: absolute;
+  z-index: 0;
+  width: 320px;
+  height: 350px;
+  background-image: linear-gradient(rgb(35, 42, 52), rgb(23, 30, 40));
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+}
+p {
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.Middle {
+  padding: 20px;
+  background-color: hsl(213, 19%, 18%);
+  height: 5%;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.Middle > p {
+  color: hsl(25, 97%, 53%);
+  margin-bottom: 0px;
+}
+.Ra {
+  display: none;
+}
+.Bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Bottom > h2 {
+  padding-right: 0px;
+}
+.Bottom > p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.Star {
+  display: flex;
+  background-color: rgb(38, 47, 56);
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+h2 {
+  color: white;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.Buttons {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.Rating {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  color: hsl(216, 12%, 54%);
+  background-color: rgb(38, 47, 56);
+  border: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.Rating:hover {
+  color: white;
+  background-color: hsl(217, 12%, 63%);
+}
+.Submit {
+  align-self: center;
+  height: 15%;
+}
+.Submit > button {
+  padding: 15px;
+  width: 280px;
+  height: 90%;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+.Submit > button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+.Rating.Selected {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.Cl {
+  opacity: 0%;
+}
