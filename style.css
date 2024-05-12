@@ -112,12 +112,16 @@ h2 {
   transition: all 0.3s;
 }
 .Rating:hover {
+  cursor: pointer;
   color: white;
   background-color: hsl(217, 12%, 63%);
 }
 .Submit {
   align-self: center;
   height: 15%;
+}
+button:hover {
+  cursor: pointer;
 }
 .Submit > button {
   padding: 15px;
